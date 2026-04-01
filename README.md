@@ -10,6 +10,11 @@ Slap your MacBook, it yells back.
 
 Uses the Apple Silicon accelerometer (Bosch BMI286 IMU via IOKit HID) to detect physical hits on your laptop and plays audio responses. Single binary, no dependencies.
 
+## Repository
+
+- SSH: `git@github.com:xpushkal/vscode-sound-extention.git`
+- HTTPS: `https://github.com/xpushkal/vscode-sound-extention`
+
 ## Requirements
 
 - macOS on Apple Silicon (M2+)
@@ -17,9 +22,15 @@ Uses the Apple Silicon accelerometer (Bosch BMI286 IMU via IOKit HID) to detect 
 
 ## Install
 
-Download from the [latest release](https://github.com/taigrr/spank/releases/latest).
+Clone and build from this repository:
 
-Or build from source:
+```bash
+git clone git@github.com:xpushkal/vscode-sound-extention.git
+cd vscode-sound-extention
+go build -o spank .
+```
+
+Or install the upstream package directly with Go:
 
 ```bash
 go install github.com/taigrr/spank@latest
@@ -190,7 +201,7 @@ sudo launchctl unload /Library/LaunchDaemons/com.taigrr.spank.plist
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=taigrr/spank&type=date&legend=top-left)](https://www.star-history.com/#taigrr/spank&type=date&legend=top-left)
+[![Star History Chart](https://api.star-history.com/svg?repos=xpushkal/vscode-sound-extention&type=date&legend=top-left)](https://www.star-history.com/#xpushkal/vscode-sound-extention&type=date&legend=top-left)
 
 ## Credits
 
@@ -199,4 +210,3 @@ Sensor reading and vibration detection ported from [olvvier/apple-silicon-accele
 ## License
 
 MIT
-# vscode-sound-extention
